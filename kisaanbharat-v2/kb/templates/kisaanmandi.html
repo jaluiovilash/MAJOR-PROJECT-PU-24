@@ -1,0 +1,56 @@
+{% extends 'home.html' %}
+{% load static %}
+
+{% block title %}
+Kisaan Mandi | KisaanBharat
+{% endblock title %}
+
+{% block stylecss %}
+<style>
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    table,
+    th,
+    td {
+        border: 1px solid black;
+    }
+
+    th,
+    td {
+        padding: 10px;
+        text-align: left;
+    }
+
+    th {
+        background-color: #f2f2f2;
+    }
+</style>
+{% endblock stylecss %}
+
+
+{% block body %}
+<h1>Crop Yield Data in India (1997-2020)</h1>
+<table id="cropTable">
+    <thead>
+        <tr>
+            <th>Crop</th>
+            <th>Year</th>
+            <th>Season</th>
+            <th>State</th>
+            <th>Area (in hectares)</th>
+            <th>Production (in tonnes)</th>
+            <th>Annual Rainfall (mm)</th>
+            <th>Fertilizer (kg/ha)</th>
+            <th>Pesticide (kg/ha)</th>
+            <th>Yield (tonnes/hectare)</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- Rows will be populated by JavaScript -->
+    </tbody>
+</table>
+
+{% endblock body %}
